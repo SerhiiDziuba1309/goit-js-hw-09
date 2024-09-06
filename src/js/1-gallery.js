@@ -1,1 +1,1 @@
-console.log('Gallary');
+console.log('Gallery');
