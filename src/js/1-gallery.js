@@ -69,7 +69,7 @@ const images = [
 
 const galleryContainer = document.querySelector('.gallery');
 
-function createGalleryMarkup(images) {
+function galleryImages(images) {
   return images
     .map(({ preview, original, description }) => {
       return `
@@ -87,9 +87,9 @@ function createGalleryMarkup(images) {
     .join('');
 }
 
-galleryContainer.innerHTML = createGalleryMarkup(images);
+galleryContainer.innerHTML = galleryImages(images);
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const libraryBox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,

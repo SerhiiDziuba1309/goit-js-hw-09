@@ -1,22 +1,20 @@
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-top: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
-
 .gallery-item {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.3% - 16px);
+  max-width: 100%;
+  box-sizing: border-box;
 }
-
-.gallery-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.gallery-link {
+  display: block;
+  overflow: hidden;
 }
 
 .gallery-image {
